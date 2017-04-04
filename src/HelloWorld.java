@@ -10,6 +10,6 @@ public class HelloWorld {
 
         int totalHours = howManyDays * hoursPerDay;
 
-        System.out.println("그럼 모두 몇시간? " + totalHours);
+        System.out.println("Total time : " + totalHours);
     }
 }
