@@ -9,8 +9,12 @@ public class AppleShop {
         double dcRate = 15.0 / 100;
 
         int resultPrice =
-                (int)(regularPriceForiPadPro * (1 - dcRate));
+                getDiscountedPrice(regularPriceForiPadPro, dcRate);
 
         System.out.println(resultPrice + "원");
+    }
+
+    public static int getDiscountedPrice(int price, double dcRate) {
+        return (int)(price * (1 - dcRate));
     }
 }

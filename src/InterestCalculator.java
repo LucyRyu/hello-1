@@ -21,7 +21,7 @@ public class InterestCalculator {
         // Process
         // 이자계산공식 : 이자 = 원금 x 이율(연이율/100) x (월/12)
         double interest =
-                principal * (rate/100) * (howManyMonth/12);
+                calcInterest(principal, howManyMonth, rate);
 
         double total = interest + principal;
 
@@ -29,6 +29,14 @@ public class InterestCalculator {
         System.out.printf(
                 "%d 개월 후에 당신은 %f원을 받을수 있습니다.",
                 howManyMonth, total);
+    }
 
+    public static double calcInterest(
+            int principal, int month, double rate) {
+
+        double interest =
+                principal * (rate/100) * (month/12);
+
+        return interest;
     }
 }

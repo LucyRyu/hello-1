@@ -30,15 +30,34 @@ public class ArrayExample {
         int[] iArr = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19
                 ,20,21,22,23,24,25,26,27,28,29,30};
 
-        for (int e : iArr) {
-            String converted = String.valueOf(e);
+        // accumulate
+        int sum = 0;
 
-            if (converted.contains("3") || converted.contains("6")
-                    || converted.contains("9")) {
-                //TODO
-            } else {
-                System.out.println(converted);
-            }
+        for (int e : iArr) {
+            sum += e;  //sum = sum + e;
         }
+
+        int countOfArray = iArr.length;
+
+        System.out.println(sum / (double)countOfArray);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
