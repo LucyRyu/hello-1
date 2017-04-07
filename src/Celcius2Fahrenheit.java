@@ -7,7 +7,14 @@ public class Celcius2Fahrenheit {
         // 섭씨
         int celcius = 19;
 
-        double result = (celcius * 1.8) + 32;
+        Celcius2FahrenheitService service =
+                new Celcius2FahrenheitService();
+
+        double result = service.toFaranheit(celcius);
+
+        String str = new String("hello");
+        //String str = "hello";
+
 
         System.out.println(result);
     }

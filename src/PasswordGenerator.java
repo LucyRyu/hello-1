@@ -23,16 +23,9 @@ public class PasswordGenerator {
 
         String prefix = "$$";
 
-        int squareLengthOfChar =
-                targetStr.length() * targetStr.length();
-
-        targetStr =
-                targetStr.substring(0,1).toUpperCase()
-                        + targetStr.substring(1);
-
+        PassWordGService service = new PassWordGService();
         String passwordGenerated =
-                prefix + targetStr
-                        + squareLengthOfChar + postfix;
+                service.makePassword(targetStr, prefix, postfix);
 
         // the last.. output the result
         System.out.println(passwordGenerated);
