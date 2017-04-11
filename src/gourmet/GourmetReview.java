@@ -48,9 +48,15 @@ public class GourmetReview {
         );
 
         // 맛집 점수 평균 구하기
-        GourmetService service = new GourmetService();
-        double average = service.calcAverageScore(list);
+        GourmetService service1 = new GourmetService();
+        double average1 = service1.calcAverageScore(list);
 
-        System.out.printf("맛집 점수 평균은 %.1f입니다.", average);
+        System.out.printf("맛집 점수 평균은 %.1f입니다.", average1);
+
+        Gourmet g1 = new Gourmet("a", "b", 25);
+        Gourmet g2 = new Gourmet("a", "b", 30);
+
+        g1.getScore();
+        g2.getScore();
     }
 }

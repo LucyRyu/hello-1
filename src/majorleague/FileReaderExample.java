@@ -40,5 +40,13 @@ public class FileReaderExample {
         double mean = service.getMeanValueWithParkName(parkList);
 
         System.out.printf("%d, %s, %.1f", notUs, haveAlias, mean);
+        System.out.println(notUs + ", " + haveAlias + ", " + mean);
+
+
+
+        String salary = "125000";
+
+        int intSalary = Integer.parseInt(salary);
+
     }
 }
